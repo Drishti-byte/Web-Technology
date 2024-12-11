@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Printing Reverse of a Number</title>
+    </head>
+    <body>
+        <script language="JavaScript">
+            var d,num,rev;
+            rev=0;
+            num = eval(prompt("Enter a Number: "));
+            while(num != 0)
+        {
+            d = num % 10;
+            num = num / 10;
+            rev = rev *10+d;
+        }
+        alert("Reverse of "+num+" is "+rev);
+        </script>
+    </body>
+</html>
