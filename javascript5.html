@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Calculating total marks and Percentage</title>
+    </head>
+    <body>
+        <center>
+            <h2><u>Calculating total marks and percentage</u></h2><br>
+            <script language="JavaScript">
+                var m1,m2,m3,m4,m5,total,per;
+                m1 = eval(prompt("Enter marks in English:"));
+                m2 = eval(prompt("Enter marks in Hindi:"));
+                m3 = eval(prompt("Enter marks in Science:"));
+                m4 = eval(prompt("Enter marks in Maths:"));
+                m5 = eval(prompt("Enter marks in S.St:"));
+                total = m1 + m2 + m3 + m4 + m5;
+                document.write("<br>Total marks are: "+total);
+                per = total / 5;
+                document.write("<br>Percentage marks are: "+per);
+            </script>
+        </center>
+    </body>
+</html>
