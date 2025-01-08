@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>To print simple interest using conditions</title>
+    </head>
+    <body>
+        <script>
+            var p,r,t,si;
+            p = eval(prompt("Enter Principal amount:"));
+            t = eval(prompt("Enter time:"));
+            if(t < 3)
+        {
+            document.write("<br>Rate of Interest is 5%");
+            si = p * r * t / 100;
+            document.write("<br>Simple Interest is "+si);
+        }
+            else if(t > 3 && t < 7)
+        {
+            document.write("<br>Rate of Interest is 7%");
+            si = p * r * t / 100;
+            document.write("<br>Simple Interest is "+si);
+        }
+            else if(t >= 7)
+        {
+            document.write("<br>Rate of Interest is 8%");
+            si = p * r * t / 100;
+            document.write("<br>Simple Interest is "+si);
+        }
+        </script>
+    </body>
+</html>
