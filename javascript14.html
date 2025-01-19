@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Simple Interest</title>
+    </head>
+    <style>
+        input{font-size:20px;}
+    </style>
+    <script language="JavaScript">
+        function result()
+        {
+            var a,b,c,d;
+            a = eval(document.a1.p.value);
+            b = eval(document.a1.r.value);
+            c = eval(document.a1.t.value);
+            d = (a*b*c)/100;
+            document.a1.si.value = d;
+        }
+    </script>
+    <body>
+        <center>
+            <form name="a1">
+                Enter principal amount: <input type="text" name="p"> <br><br>
+                Enter rate of interest: <input type="text" name="r"><br><br>
+                Enter time period:      <input type="text" name="t"> <br><br>
+                <input type="button" value="Result" onclick="result()"><br><br>
+                Simple Interest: <input type="text" name="si">
+            </form>
+        </center>
+    </body>
+</html>
