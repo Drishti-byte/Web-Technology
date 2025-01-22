@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Login Form</title>
+        <script language="JavaScript">
+            function check()
+            {
+                var u,p;
+                u = document.f1.t1.value;
+                p = document.getElementById("t2").value;
+                if(u == "Drishti" && p == "abc123")
+                    alert("Welcome");
+                else 
+                    alert("Wrong username or password");
+            }
+        </script>
+    </head>
+    <body>
+        <form name="f1">
+           Username: <input type="text" size="30" name="t1" required><br><br>
+           Password: <input type="password" size="30" name="t2" required><br><br>
+           <input type="submit" value="login" onclick="check()">
+        </form>
+    </body>
+</html>
