@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Onchange event</title>
+    </head>
+    <body>
+        <h1 align="center">JavaScript Onchange event</h1><br>
+        <form>
+            Enter your name: <input type="text" id="fname" onchange="uppercase()">
+        </form>
+        <script>
+            function uppercase()
+            {
+                const x = document.getElementById("fname");
+                x.value = x.value.toUpperCase();
+            }
+        </script>
+    </body>
+</html>
