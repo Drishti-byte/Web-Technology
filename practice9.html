@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        let items = [250, 645, 300, 900, 50];
+        let i = 0;
+        for(val of items)
+        {
+            let offer = val/10;
+            items[i] = items[i] - offer;
+            console.log(`Values after offer = ${items[i]}`);
+            i++;
+        }
+        console.log(items);
+        for(let i=0; i < items.length;i++)
+        {
+            let offer = items[i]/10;
+            items[i] -= offer;
+        }
+        console.log(items);
+    </script>
+</body>
+</html>
